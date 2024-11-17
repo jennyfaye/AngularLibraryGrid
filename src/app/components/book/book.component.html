@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Angular Library Grid</title>
+</head>
+<body>
+  <div class="book-grid">
+  <div *ngFor="let book of bookList" class="book-grid__item">
+    <img
+      class="book-grid__image"
+      [src]="book.imageUrl"
+    />
+    <h2 class="book-grid__name">{{ book.name }}</h2>
+    <p class="book-grid__author">{{ book.author }}</p>
+    <button class="book-grid__button">View Details</button>
+  </div>
+  </div>
+</body>
+</html>
